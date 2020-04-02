@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Questionnaire_BAC">
+    tools:context=".Questionnaire_BAC"
+    android:background="@drawable/custom_page">
+
 
 
     <ScrollView
@@ -31,16 +33,16 @@
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/questionnaire_bac"
+                android:layout_height="71dp"
                 android:gravity="center"
-                android:textSize="35sp"
-                android:textColor="#ff0000"/>
+                android:text="Quizz BAC"
+                android:textColor="#ff0000"
+                android:textSize="35sp" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
-                android:layout_height="69dp"
+                android:layout_height="68dp"
                 android:text="@string/bonjour_voici_le_qcm_il_n_y_a_qu_une_seule_bonne_r_ponse_par_question_bonne_chance"
                 android:textSize="15sp" />
 
