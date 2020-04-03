@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Questionnaire_DUT1"
+    tools:context=".Questionnaire_BAC"
     android:background="@drawable/custom_page">
+
 
 
     <ScrollView
@@ -32,16 +33,16 @@
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Questionnaire dut1"
+                android:layout_height="71dp"
                 android:gravity="center"
-                android:textSize="35sp"
-                android:textColor="#ff0000"/>
+                android:text="@string/questionnaire_dut1"
+                android:textColor="#ff0000"
+                android:textSize="35sp" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
-                android:layout_height="69dp"
+                android:layout_height="68dp"
                 android:text="@string/bonjour_voici_le_qcm_il_n_y_a_qu_une_seule_bonne_r_ponse_par_question_bonne_chance"
                 android:textSize="15sp" />
 
@@ -50,128 +51,154 @@
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="@string/_1_quel_est_l_quivalent_de_a_2_b_2"
+                android:text="@string/malloc"
                 android:textSize="17sp" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
-            <CheckBox
-                android:id="@+id/checkBox"
-                android:layout_width="wrap_content"
-                android:layout_height="49dp"
-                android:text="@string/a_2_b_2" />
+                <RadioButton
+                    android:id="@+id/Btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="@string/allocation" />
 
-            <CheckBox
-                android:id="@+id/checkBox2"
-                android:layout_width="wrap_content"
-                android:layout_height="42dp"
-                android:text="@string/a_2_2ab_b_2" />
+                <RadioButton
+                    android:id="@+id/Btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:text="@string/uneErreur" />
 
-            <CheckBox
-                android:id="@+id/checkBox3"
-                android:layout_width="wrap_content"
-                android:layout_height="45dp"
-                android:text="@string/a_2_2ab_b_2_" />
+                <RadioButton
+                    android:id="@+id/Btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:text="@string/arretProc" />
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:gravity="center"
-                android:text="@string/_2_quel_est_la_vitesse_de_la_lumi_re_dans_l_air"
+                android:text="@string/Attenuation"
                 android:textSize="17sp" />
-
-            <CheckBox
-                android:id="@+id/checkBox4"
-                android:layout_width="wrap_content"
-                android:layout_height="52dp"
-                android:text="@string/_300_m_s" />
-
-            <CheckBox
-                android:id="@+id/checkBox5"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:text="@string/_3_10_8_m_s"
-                />
-
-            <CheckBox
-                android:id="@+id/checkBox6"
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="74dp"
-                android:text="@string/_3_10_8_km_s" />
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/Btn6"
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:text="@string/DivPeriode" />
+
+                <RadioButton
+                    android:id="@+id/Btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/dimPui" />
+
+                <RadioButton
+                    android:id="@+id/Btn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:text="@string/DimFreq" />
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="49dp"
-                android:text="@string/_3_quelle_est_la_particularit_de_linuxos"
+                android:text="@string/Ls"
                 android:textSize="17sp" />
-
-            <CheckBox
-                android:id="@+id/checkBox7"
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="51dp"
-                android:text="@string/c_est_un_syst_me_d_exploitation_open_source" />
+                android:layout_height="match_parent" >
 
-            <CheckBox
-                android:id="@+id/checkBox8"
-                android:layout_width="match_parent"
-                android:layout_height="51dp"
-                android:text="@string/c_est_un_syst_me_d_exploitation_reserv_aux_profesionnels" />
+                <RadioButton
+                    android:id="@+id/Btn9"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:text="@string/lsn" />
 
-            <CheckBox
-                android:id="@+id/checkBox9"
-                android:layout_width="match_parent"
-                android:layout_height="57dp"
-                android:text="@string/c_est_un_syst_me_d_exploitation_ill_gale" />
+                <RadioButton
+                    android:id="@+id/Btn8"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:text="@string/lsr" />
+
+                <RadioButton
+                    android:id="@+id/Btn7"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:text="@string/Lsl" />
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="43dp"
-                android:text="@string/_4_qu_est_ce_qu_un_signal_p_riodique"
+                android:text="@string/QAM"
                 android:textSize="17sp" />
-
-            <CheckBox
-                android:id="@+id/checkBox10"
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="69dp"
-                android:text="@string/c_est_un_signal_qui_dure_longtemps" />
+                android:layout_height="match_parent" >
+                <RadioButton
+                    android:id="@+id/Btn10"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:text="@string/dbit" />
 
-            <CheckBox
-                android:id="@+id/checkBox11"
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:text="@string/c_est_un_signal_tr_s_court" />
+                <RadioButton
+                    android:id="@+id/Btn11"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:text="@string/qbits" />
 
-            <CheckBox
-                android:id="@+id/checkBox12"
-                android:layout_width="match_parent"
-                android:layout_height="63dp"
-                android:text="c'est un signal qui se répète dans le temps avec une certaine periodicité" />
+                <RadioButton
+                    android:id="@+id/Btn12"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:text="@string/hbits" />
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="51dp"
-                android:text="@string/quand_est_ce_que_le_t_l_phone_a_t_cr_e"
+                android:text="@string/Aloha"
                 android:textSize="17sp" />
-
-            <CheckBox
-                android:id="@+id/checkBox13"
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="49dp"
-                android:text="@string/_1876" />
+                android:layout_height="match_parent" >
 
-            <CheckBox
-                android:id="@+id/checkBox14"
-                android:layout_width="match_parent"
-                android:layout_height="49dp"
-                android:text="@string/_1914" />
+                <RadioButton
+                    android:id="@+id/Btn13"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:text="@string/DATE1" />
 
-            <CheckBox
-                android:id="@+id/checkBox15"
-                android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:text="@string/_1819" />
+                <RadioButton
+                    android:id="@+id/Btn14"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:text="@string/date2" />
+
+                <RadioButton
+                    android:id="@+id/Btn15"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:text="@string/date3" />
+            </RadioGroup>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Soumettre" />
+
+
         </LinearLayout>
 
     </ScrollView>
